@@ -87,7 +87,7 @@ body {
     height: 35%;
     background-repeat: no-repeat;
     background-position: center;
-    background-size: 100% 100%;
+    background-size: contain;
 }
 
 .caption {
@@ -121,6 +121,9 @@ body {
 .a {
     height: 100%;
     width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 #steam {
@@ -210,35 +213,10 @@ a:focus {
     }
     .item {
         width: 30%;
+        background-size: auto 100%;
     }
-    .container {
-        height: 80%;
-        flex-direction: row;
-    }
-}
-
-@media (max-width: 1000px) {
-    .image {
-        width: 80%;
-        height: 35%;
-        margin-top: 4%;
-        justify-content: center;
-        align-items: center;
-    }
-    .text {
-        font-size: 30px;
-    }
-    .caption {
-        font-size: 22px;
-    }
-    .whereToBuy {
-        width: 80%;
-        height: 50%;
-        margin-bottom: 15%;
-        column-gap: 40%;
-    }
-    .item {
-        width: 30%;
+    #g2a {
+        background-size: 100% auto;
     }
     .container {
         height: 80%;
@@ -252,6 +230,7 @@ a:focus {
     }
     .item {
         width: 40%;
+        background-size: contain;
     }
     .whereToBuy {
         column-gap: 20%;
