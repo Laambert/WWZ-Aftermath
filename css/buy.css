@@ -1,0 +1,308 @@
+body {
+    height: 100vh;
+    width: 100%;
+    background-image: url("../images/buyBack.jpg");
+    background-position: center;
+    background-size: cover;
+    backdrop-filter: blur(2px);
+    font-family: 'Lato', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    height: 65%;
+    width: 70%;
+    background: rgb(27, 30, 96);
+    background: radial-gradient(circle, rgba(27, 30, 96, 1) 0%, rgba(0, 0, 0, 1) 91%);
+    border-radius: 10px;
+    border-color: rgba(0, 28, 70, 0.781);
+    border-style: solid;
+    border-width: 5px;
+    box-shadow: 0px 0px 50px 2px rgba(214, 214, 214, 0.8);
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    animation-name: containerAppear;
+    animation-timing-function: ease-out;
+    animation-duration: 0.6s;
+    animation-play-state: running;
+    animation-iteration-count: 1;
+}
+
+.home {
+    position: absolute;
+    color: rgb(175, 35, 35);
+    height: 50px;
+    width: 50px;
+    top: 35px;
+    left: 35px;
+}
+
+.image {
+    height: 95%;
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+    color: whitesmoke;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    font-size: 45px;
+    margin-bottom: 6%;
+    margin-right: 2%;
+    border-radius: 10px;
+    background-repeat: no-repeat;
+}
+
+.text {
+    height: 100%;
+    width: 100%;
+    margin: 8%;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    display: flex;
+    flex-direction: row;
+    animation-name: text;
+    animation-timing-function: ease-out;
+    animation-duration: 1.2s;
+    animation-play-state: running;
+    animation-iteration-count: 1;
+}
+
+.whereToBuy {
+    height: 65%;
+    width: 40%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 30%;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.item {
+    width: 35%;
+    height: 35%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% 100%;
+}
+
+.caption {
+    width: 100%;
+    display: flex;
+    justify-self: flex-end;
+    align-self: center;
+    margin-top: 8%;
+    margin-bottom: 5%;
+    color: rgb(150, 150, 150);
+    font-size: 31px;
+    text-align: center;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    animation-name: text;
+    animation-timing-function: ease-out;
+    animation-duration: 1.2s;
+    animation-play-state: running;
+    animation-iteration-count: 1;
+}
+
+.description {
+    font-size: 18px;
+    color: rgb(168, 168, 168);
+    animation-name: text;
+    animation-timing-function: ease-out;
+    animation-duration: 1.5s;
+    animation-play-state: running;
+    animation-iteration-count: 1;
+}
+
+.a {
+    height: 100%;
+    width: 100%;
+}
+
+#steam {
+    background-image: url("../images/steam.png");
+}
+
+#epic {
+    background-image: url("../images/epic.png");
+}
+
+#eneba {
+    background-image: url("../images/eneba.webp");
+}
+
+#g2a {
+    background-image: url("../images/g2a.png");
+}
+
+a:active {
+    text-decoration: none;
+    color: rgb(160, 0, 0);
+}
+
+a:hover {
+    text-decoration: none;
+    color: rgb(160, 0, 0);
+}
+
+a:link {
+    text-decoration: none;
+    color: rgb(160, 0, 0);
+}
+
+a:visited {
+    text-decoration: none;
+    color: rgb(160, 0, 0);
+}
+
+a:focus {
+    text-decoration: none;
+    color: rgb(160, 0, 0);
+}
+
+@keyframes containerAppear {
+    from {
+        box-shadow: 0px 0px 50px 2px rgba(214, 214, 214, 0.8);
+        margin-top: -20%;
+        margin-right: -20%;
+    }
+    to {
+        box-shadow: 0px 0px 50px 2px rgba(214, 214, 214, 0.8);
+        margin-top: 0%;
+        margin-right: 0%;
+    }
+}
+
+@keyframes text {
+    from {
+        transform: rotateZ(0deg);
+        transform: scale(0.5);
+    }
+    to {
+        transform: rotateZ(360deg);
+        transform: scale(1);
+    }
+}
+
+@media (max-width: 1000px) {
+    .image {
+        width: 80%;
+        height: 35%;
+        margin-top: 4%;
+        justify-content: center;
+        align-items: center;
+    }
+    .text {
+        font-size: 30px;
+    }
+    .caption {
+        font-size: 22px;
+    }
+    .whereToBuy {
+        width: 80%;
+        height: 50%;
+        margin-bottom: 15%;
+        column-gap: 40%;
+    }
+    .item {
+        width: 30%;
+    }
+    .container {
+        height: 80%;
+        flex-direction: row;
+    }
+}
+
+@media (max-width: 1000px) {
+    .image {
+        width: 80%;
+        height: 35%;
+        margin-top: 4%;
+        justify-content: center;
+        align-items: center;
+    }
+    .text {
+        font-size: 30px;
+    }
+    .caption {
+        font-size: 22px;
+    }
+    .whereToBuy {
+        width: 80%;
+        height: 50%;
+        margin-bottom: 15%;
+        column-gap: 40%;
+    }
+    .item {
+        width: 30%;
+    }
+    .container {
+        height: 80%;
+        flex-direction: row;
+    }
+}
+
+@media (max-width: 650px) {
+    .container {
+        margin-top: 10%;
+    }
+    .item {
+        width: 40%;
+    }
+    .whereToBuy {
+        column-gap: 20%;
+    }
+}
+
+@media (max-width: 440px) {
+    .item {
+        width: 45%;
+    }
+    .text {
+        font-size: 23px;
+    }
+    .caption {
+        font-size: 14px;
+    }
+    .whereToBuy {
+        column-gap: 10%;
+        row-gap: 10%;
+    }
+    .home {
+        top: 10px;
+        left: 10px;
+    }
+}
+
+@media (max-height: 660px) {
+    body {
+        height: 660px;
+    }
+    .text {
+        font-size: 33px;
+    }
+    .caption {
+        font-size: 24px;
+    }
+    .home {
+        top: 10px;
+        left: 10px;
+    }
+}
+
+@media (max-width: 500px) and (max-height: 660px) {
+    .text {
+        font-size: 25px;
+    }
+    .caption {
+        font-size: 15px;
+    }
+    .home {
+        top: 10px;
+        left: 10px;
+    }
+}
